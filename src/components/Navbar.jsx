@@ -15,7 +15,7 @@ const Navbar = () => {
   }, []);
   const handleLogout=()=>{
     localStorage.removeItem("userInfo");
-    navigate('/onboarding1A');
+    navigate('/');
   }
 
   if(!login){
@@ -41,11 +41,11 @@ const Navbar = () => {
             className="h-8 w-[165px] relative"
             loading="lazy"
             alt="hello"
-            src="src/assets/Vector.png"
+            src={Vector}
           />
         </header>
       </section>
-      <section onClick={handleLogout} className='flex justify-center items-center pr-28'>
+      <section onClick={handleLogout} className='flex justify-center items-center pr-28 cursor-pointer'>
       <img
             className="h-8 pr-4 relative"
             loading="lazy"
