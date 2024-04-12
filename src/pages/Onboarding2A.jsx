@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
+import Illustration from "../assets/Illustration.png";
+import Ellipse from "../assets/Ellipse1.svg";
 
 import { useNavigate } from 'react-router-dom';
 
@@ -51,7 +53,7 @@ const Onboarding2A = () => {
                     className="h-[110px] w-[110px] relative"
                     loading="lazy"
                     alt=""
-                    src="src/assets/Illustration.png"
+                    src={Illustration}
                   />
                 </div>
                 <div className="self-stretch  rounded-3xs bg-background-secondary overflow-hidden flex flex-col items-start justify-start p-[30px] box-border max-w-full text-lg text-typography-grey-main">
@@ -129,7 +131,7 @@ const Onboarding2A = () => {
                             <img
                               className="h-6 w-6 mx-4 rounded-full object-cover border border-neutral-400"
                               alt=""
-                              src="src/assets/Ellipse1.svg"
+                              src={Ellipse}
                             />
                             <div className="flex items-center border-r border-background-divider pr-4">
                               <span className="text-lg font-lato text-gray-700">{`+91`}</span>

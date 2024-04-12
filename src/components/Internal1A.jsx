@@ -1,6 +1,7 @@
 import Card from "./Card";
 
 import { useNavigate } from 'react-router-dom';
+import Illustration from '../assets/Illustration.png'
 
 const Internal1A = () => {
   const navigate = useNavigate();
@@ -46,7 +47,7 @@ const Internal1A = () => {
                 className="h-[110px] w-[110px] relative"
                 loading="lazy"
                 alt=""
-                src="src/assets/Illustration.png"
+                src={Illustration}
               />
             </div>
             <div className="self-stretch  rounded-3xs bg-background-secondary overflow-hidden flex flex-col items-start justify-start p-[30px] box-border max-w-full text-lg text-typography-grey-main">

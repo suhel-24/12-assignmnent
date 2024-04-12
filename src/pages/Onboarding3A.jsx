@@ -1,28 +1,16 @@
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import Illustration from "../assets/Illustration.png";
 
 const Onboarding3A = () => {
   return (
     <div className="w-full h-[1387px] relative rounded-xl bg-background-primary overflow-hidden flex flex-col items-start justify-start pt-0 px-0 pb-[0.4px] box-border gap-[124px] leading-[normal] tracking-[normal] mq450:gap-[31px] mq800:h-auto mq800:gap-[62px]">
       <div className="mt-[-127px] self-stretch h-px relative bg-gainsboro-100 shrink-0 [debug_commit:f6aba90]" />
       <main className="self-stretch h-[1202.6px] flex flex-col items-start justify-start gap-[46px] shrink-0 [debug_commit:f6aba90] mq800:h-auto mq800:gap-[23px]">
-        <header className="mt-[-79px] self-stretch flex flex-row items-start justify-center py-0 pr-[23px] pl-0 box-border max-w-full text-left text-lg text-typography-grey-dark font-lato">
-          <div className="w-[1175px] flex flex-row items-start justify-between py-0 px-[30px] box-border shrink-0 [debug_commit:f6aba90]">
-            <img className="h-8 w-[165px] relative" alt="" src="/card.svg" />
-            <div className="h-[27px] w-[83.1px] flex flex-col items-start justify-start pt-[5px] px-0 pb-0 box-border">
-              <div className="self-stretch flex-1 flex flex-row items-start justify-start gap-[10px]">
-                <div className="flex flex-col items-start justify-start pt-[2.6px] px-0 pb-0">
-                  <img
-                    className="w-[18.1px] h-[16.8px] relative"
-                    alt=""
-                    src="/icon.svg"
-                  />
-                </div>
-                <div className="self-stretch flex-1 relative">Logout</div>
-              </div>
-            </div>
-          </div>
-        </header>
-        <section className="self-stretch h-24 relative bg-background-base shrink-0 [debug_commit:f6aba90]" />
+        <div className="w-full">
+          <Navbar />
+        </div>
+        
         <section className="self-stretch flex flex-row items-start justify-center py-0 pr-[21px] pl-5 box-border max-w-full shrink-0 text-left text-lg text-typography-grey-dark font-lato">
           <div className="w-[785px] flex flex-col items-center justify-start gap-[30px] shrink-0 [debug_commit:f6aba90]">
             <div className="self-stretch rounded-xl bg-background-base flex flex-row items-center justify-between py-[30px] px-10 box-border max-w-full gap-[20px] text-[28px] mq800:flex-wrap">
@@ -58,7 +46,7 @@ const Onboarding3A = () => {
                 className="h-[110px] w-[110px] relative"
                 loading="lazy"
                 alt=""
-                src="src/assets/Illustration.png"
+                src={Illustration}
               />
             </div>
             <div className="self-stretch rounded-3xs bg-background-secondary overflow-hidden flex flex-col items-start justify-start p-[30px] box-border max-w-full">
