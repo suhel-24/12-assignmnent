@@ -27,8 +27,9 @@ const Signin = () => {
     <div>
       <section className="self-stretch flex flex-row items-start justify-center py-0 px-5 box-border max-w-full text-left text-sm text-typography-grey-dark font-lato">
         <div className="w-[510px] rounded-xl bg-white flex flex-col items-center justify-start p-[30px] box-border gap-[30px] max-w-full">
-          <div className="flex flex-col items-center justify-start">
-            <div className="relative text-6xl font-semibold inline-block min-w-[100px] h-10">
+          <div className="flex flex-col items-center justify-start gap-[20px]">
+            <div className="relative text-lg font-semibold inline-block min-w-[100px] h-7">
+              
               Welcome
             </div>
             <div className="relative text-base leading-[150%] text-typography-grey-main">
